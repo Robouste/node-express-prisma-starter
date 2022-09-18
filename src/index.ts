@@ -2,6 +2,7 @@ import cors from "cors";
 import * as dotenv from "dotenv";
 import express from "express";
 import helmet from "helmet";
+import { GamesRouter } from "./endpoints/games/games.router";
 import { errorHandler } from "./middleware/error.middleware";
 import { notFoundHandler } from "./middleware/not-found.middleware";
 
@@ -20,6 +21,7 @@ app.use(express.json());
 /**
  * endpoints go here
  */
+app.use("/api/games", GamesRouter.router);
 
 app.use(errorHandler);
 app.use(notFoundHandler);
