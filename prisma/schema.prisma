@@ -10,6 +10,10 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
+/**
+* Models. Warning: don't forget to run `npx prisma generate` to update the models intelisense
+*/
+
 model Game {
     id    String @id
     title String
