@@ -1,3 +1,4 @@
+// run `npx prisma generate` for this type to be created
 import { Game } from "@prisma/client";
 import { DbContext } from "../../prisma/db-context";
 
