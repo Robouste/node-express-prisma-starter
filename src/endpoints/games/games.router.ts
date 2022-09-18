@@ -1,7 +1,4 @@
-/**
- * Required External Modules and Interfaces
- */
-
+// run `npx prisma generate` for this type to be created
 import { Game } from "@prisma/client";
 import express, { Request, Response, Router } from "express";
 import { context } from "../../prisma/db-context";
